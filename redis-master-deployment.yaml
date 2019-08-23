@@ -1,7 +1,7 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: redis-master
+  name: back-redis-master
 spec:
   replicas: 1
   template:
@@ -9,7 +9,7 @@ spec:
       labels:
         app: redis
         role: master
-        tier: backend
+        tier: back
     spec:
       volumes:
         - name: task-pv-storage

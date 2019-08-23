@@ -8,10 +8,10 @@ spec:
     metadata:
       labels:
         app: guestbook
-        tier: frontend
+        tier: frontPhp
     spec:
       containers:
-      - name: php-redis
+      - name: front-php-redis
         image: gcr.io/google-samples/gb-frontend:v4
         env:
         - name: GET_HOSTS_FROM

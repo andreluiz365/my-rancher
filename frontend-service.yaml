@@ -1,14 +1,14 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: frontend
+  name: front
   labels:
     app: guestbook
-    tier: frontend
+    tier: front
 spec:
   type: LoadBalancer
   ports:
   - port: 80
   selector:
     app: guestbook
-    tier: frontend
+    tier: front
